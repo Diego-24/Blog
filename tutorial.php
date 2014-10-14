@@ -8,11 +8,10 @@
 <body>
 	<?php
 
+		echo "Diego Sanchez";
 		$admin = true;
 		$moderator = true;
-		if() {
-
-		}
+		
 
 	?>
 <script type="text/javascript" href="js/bootstrap.js"></script>
