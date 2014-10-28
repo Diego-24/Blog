@@ -7,11 +7,8 @@
 </head>
 <body>
 	<?php
-
-		echo "Diego Sanchez";
-		$admin = true;
-		$moderator = true;
-		
+		/**/
+		require_once(__DIR__ . "/controller/create-db.php");
 
 	?>
 <script type="text/javascript" href="js/bootstrap.js"></script>
