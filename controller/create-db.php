@@ -22,6 +22,7 @@
 		}
 
 	}
+	/*this else statement is echoing that my database is created*/
 	else {
 		echo "<p>Database already exists.</p>";
 
