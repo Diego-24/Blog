@@ -28,7 +28,6 @@
 
 	}
 
-	/**/
 	$query = $connection->query("CREATE TABLE posts ("
 		. "id int(11) NOT NULL AUTO_INCREMENT,"
 		. "title varchar(255) NOT NULL,"
