@@ -40,7 +40,7 @@
 	if($query) {
 		echo "<p>Succesfully create table posts</p>";
 	}
-	/*gets fired when the queryis false*/
+	/*gets fired when the query is false*/
 	else{
 		echo "<p>$connection->error</p>";
 	}
