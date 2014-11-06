@@ -1,3 +1,9 @@
-body , html{
+body{
 	background-color: #FE2E2E;
+	text-align: center;
 }
+
+
+@media screen and (max-width: 320px) {
+  html{background: green; } 
+ }
