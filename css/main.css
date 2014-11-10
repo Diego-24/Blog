@@ -5,5 +5,9 @@ body{
 
 
 @media screen and (max-width: 320px) {
-  	html{background: green; } 
+  	html{background: yellow; } 
+ }
+
+ @media screen and (max-width: 1024px) {
+  	html{background: yellow; } 
  }
