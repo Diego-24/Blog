@@ -1,5 +1,5 @@
 <?php
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/config.php");
 	
 	/*gives us access to these variables*/
 	$connection = new mysqli($host, $username, $password, $database);
