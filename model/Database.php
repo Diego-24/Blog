@@ -17,12 +17,22 @@ class Database {
 
 	/*opens the connection*/
 	public function openConnection() {
-
+		$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
+		
+		/*Checking if there was an error connecting to the database.
+		If there is an error the program will die*/
+		if ($this->connection->connect_error) {
+			die("<p>Error: " . $this->connection->connect_error . "</p>");
+		}
 	}
 
-	/*closes the connection*/
+	/*statements that can be repeated. closes the connection*/
 	public function closeConnection() {
-
+		/*checks if the variable has been set or not
+		or if there is something within the variable*/
+		if(isset ($this->connection)) {
+			$this->connection->close();
+		}
 	}
 
 
