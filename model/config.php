@@ -6,3 +6,6 @@
 	$username = "root";
 	$password = "root";
 	$database = "blog_db";
+
+	/*stores the object mysqli*/
+	$connection = new Database($host, $username, $password, $database);

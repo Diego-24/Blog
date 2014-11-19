@@ -37,6 +37,15 @@ class Database {
 
 
 	public function query($string) {
+		/*executes lines 19-27*/
+		$this->openConnection();
 
+		/*stores a query in a variable*/
+		$query = $this->connection->query($string);
+	
+		/*executes lines 30-36*/
+		$this->closeConnection():
+
+		return $query;
 	}
 }

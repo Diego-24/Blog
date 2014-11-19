@@ -1,9 +1,6 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php");
 	
-	/*gives us access to these variables*/
-	$connection = new mysqli($host, $username, $password, $database);
-
 	/*makes sure no weird things happen to the input*/
 	/*INPUT_POST gives us info that is being posted*/
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
@@ -18,6 +15,3 @@
 	else {
 		echo "<p>$connection->error</p>";
 	}
-
-	/*closes connection*/
-	$connection->close();
