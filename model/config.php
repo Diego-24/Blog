@@ -1,4 +1,6 @@
 <?php
+	require_once(__DIR__ . "/database.php");
+
 	/*Sets the path that leads to PHPBasics*/
 	$path = "/PHPBasics/";
 	
