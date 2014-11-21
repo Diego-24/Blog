@@ -7,11 +7,11 @@
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
 
 	/*runs a query on my dataase.Inserts into my table called posts.Setting the values within post called title and post*/
-	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'");
+	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post'");
 
 	if($query) {
 		echo "<p>Successfully inserted post: $post</p>";
 	}
 	else {
-		echo "<p>$connection->error</p>";
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
