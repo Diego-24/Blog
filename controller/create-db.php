@@ -16,3 +16,21 @@
 	else{
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
 	}
+
+	/*creates another table*/
+	$query = $_SESSION["connection"]->query("CREATE TABLE users("
+			. "id int(11) NOT NULL AUTO_INCREMENT,"
+			. "username varchar(30) NOT NULL,"
+			. "email varchar(50) NOT NULL,"
+			. "password char(128) NOT NULL,"
+			. "salt char(128) NOT NULL,"
+			. "PRIMARY KEY (id))");
+
+	/*echo that the table was created*/
+	if ($query) {
+		echo "<p>Successfully created table: users</p>";
+	}
+	/*fired when query is false*/
+	else {
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	}
