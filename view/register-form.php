@@ -1,4 +1,11 @@
-<form>
+<?php
+	require_once(__DIR__ . "/../model/config.php");
+?>
+
+<h1>Register</h1>
+
+<!--creates a path-->
+<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
 	<div>
 		<!--creates a slot for the user's email-->
 		<label for="email">Email: </label>
