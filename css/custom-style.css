@@ -1,0 +1,22 @@
+body {
+	text-align: center;
+	background-color: #58FAF4;
+	background:url(https://nemu.pointysoftware.net/wallpapers/aluminumwrench/1920_Subtle/Techno_Wallpaper_1920_Light_Subtle.png);
+}
+
+div {
+	padding: 30px;
+}
+
+.Blog-Post {
+	text-align: center;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  	html{background: yellow; } 
+ }
+
+ @media screen and (max-width: 1024px) {
+  	html{background: yellow; } 
+ }
